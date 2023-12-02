@@ -1,0 +1,38 @@
+/*
+font-family: 'Eagle Lake', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: rgb(44, 44, 44);
+}
+body {
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(44, 44, 44);
+}
+#splash h1 {
+    color: white;
+}
+#splash a {
+    color: #52a7c1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#splash a:hover {
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width:959px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    #splash a {
+        font-size: 1rem;
+    }
+}
