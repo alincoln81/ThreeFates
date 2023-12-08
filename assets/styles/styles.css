@@ -3,31 +3,129 @@ font-family: 'Eagle Lake', serif;
 font-family: 'Open Sans', sans-serif;
 */
 
+/* Default Settings --------------------------------------------------------------------- */
 html {
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.8em;
     font-size: 18px;
-    background-color: rgb(44, 44, 44);
+    background-color: #222;
 }
 body {
     padding: 0;
     height: 100vh;
     width: 100%;
     color:rgb(255, 255, 255);
-    background-color: rgb(44, 44, 44);
+    background-color: #222;
 }
-#splash h1 {
-    color: white;
-}
-#splash a {
+h1, h2, h3, h4, h5, h6 {
     color: #52a7c1;
+}
+#about, #services, #skills, #contact {
+    position: relative;
+    top: -130px;
+}
+/* Header ------------------------------------------------------------------------------- */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+header #logo {
+    height: 100px;
+    width: auto;
+}
+
+/* Main --------------------------------------------------------------------------------- */
+main {
+    /*padding-top: 100px;*/
+}
+
+/* Hero */
+#includeHero {
+    background-image: url('/assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* About */
+.about #company-title {
+    font-size: 1rem;
+}
+/* Services */
+.services p {
+    margin-top: 5px;
+}
+.services ul.uk-switcher, .services ul.uk-switcher li {
+    height: 100%;
+}
+.uk-modal-body p {
+    color: #222;
+}
+
+#switcher-cont {
+    min-height: 340px;
+}
+
+#webdev, #appdev {
+    background-image: url('/assets/images/svg/Develop_0000_Layer-1.png');
+}
+#branding {
+    background-image: url('/assets/images/svg/Design.png');
+}
+#prodconsult {
+    background-image: url('/assets/images/svg/Consult.png');
+}
+#devops {
+    background-image: url('/assets/images/svg/Design.png');
+}
+#qa {
+    background-image: url('/assets/images/svg/Design.png');
+}
+#support {
+    background-image: url('/assets/images/svg/Design.png');
+}
+#webdev, #appdev, #devops, #liveops, #qa, #integrate, #prodconsult, #projconsult, #branding, #support {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.services .learn {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Skills */
+i.skill {
+    padding: 10px;
+    font-size: 2.8rem;
+    transition: all 0.3s ease-in-out;
+}
+
+i.skill:hover {
+    color: #52a7c1;
+}
+
+/* Footer ------------------------------------------------------------------------------- */
+footer a {
+    color: #52a7c1;
+    font-size: 1.5rem;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-#splash a:hover {
+footer a:hover {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
+/* Media -------------------------------------------------------------------------------- */
 @media only screen and (max-width:959px) {
     h1 {
         font-size: 1.5rem;

@@ -1,0 +1,175 @@
+
+<script>
+    $(function() {
+        $("#includeTabNav").load("./services/tabnav.html");
+        $("#includeDev").load("./services/development.html");
+        $("#includeDesign").load("./services/design.html");
+        $("#includeConsulting").load("./services/consulting.html");
+        $("#includeOps").load("./services/ops.html");
+        $("#includeQa").load("./services/qa.html");
+        $("#includeSupport").load("./services/support.html");
+    });
+</script>
+
+
+<div class="uk-container uk-container-large uk-padding-small uk-margin-large-top">
+
+    <h2>Our Services</h2>
+
+    <div id="switcher-cont" class="uk-visible@m">
+        <div uk-grid>
+            <div id="includeTabNav" class="uk-width-auto@m"></div>
+
+            <div class="uk-width-expand@m">
+                <ul id="component-tab-left" class="uk-switcher">
+                    <li id="includeDev" class="uk-grid-small uk-margin-remove-top" uk-grid></li>
+                    <li id="includeDesign" class="uk-grid-small uk-margin-remove-top" uk-grid></li>
+                    <li id="includeConsulting" class="uk-grid-small uk-margin-remove-top" uk-grid></li>
+                    <li id="includeOps" class="uk-grid-small uk-margin-remove-top" uk-grid></li>
+                    <li id="includeQa" class="uk-grid-small  uk-margin-remove-top" uk-grid></li>
+                    <li id="includeSupport" class="uk-grid-small  uk-margin-remove-top" uk-grid></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-hidden@m">
+
+        <ul uk-accordion>
+            <li class="uk-open">
+                <a class="uk-accordion-title" href>Development</a>
+                <div class="uk-accordion-content uk-margin-large-bottom">
+                    <h4>Website Development</h4>
+                    <p>We offer bespoke solutions that blend aesthetic appeal with functional excellence. Our team 
+                    of skilled designers and developers works closely with clients to understand their vision and 
+                    business goals, creating websites that are not only visually stunning but also user-friendly 
+                    and optimized for performance. From responsive design to custom functionality, we ensure that 
+                    each website we craft is tailored to meet the unique needs of our clients.</p>
+                    <!--whether it's for a small business or a 
+                    large enterprise. Our commitment is to deliver a digital presence that not only resonates 
+                    with your target audience but also drives engagement and growth for your business. With 
+                    our expertise in the latest web technologies and trends, we are dedicated to building 
+                    websites that leave a lasting impression.-->
+
+                    <h4>Application Development</h4>
+                    <p>we specialize in custom application development, tailored to meet the unique needs and objectives 
+                    of our clients. Our team of expert developers is adept in crafting cutting-edge applications for 
+                    various platforms, including mobile, web, and desktop. We focus on creating user-centric designs, 
+                    ensuring intuitive navigation and optimal functionality. We work closely with our clients from 
+                    concept to launch.</p>
+                    <!--incorporating their feedback at every stage to develop applications that not only 
+                    fulfill their requirements but also exceed expectations. Our commitment is to deliver applications 
+                    that are not only robust and scalable but also align seamlessly with your business strategies, 
+                    enhancing productivity and offering a competitive edge in the market. With our innovative approach 
+                    and technical expertise, we are dedicated to turning your vision into a reality.-->
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href>Ops</a>
+                <div class="uk-accordion-content uk-margin-large-bottom">
+                    <h4>DevOps</h4>
+                    <p>We excel in providing comprehensive DevOps services, ensuring a seamless and efficient pipeline 
+                    from development to operations. Our expertise lies in creating synergies between software development 
+                    and IT operations, allowing for faster development cycles, increased deployment frequency, and more 
+                    dependable releases in line with your business objectives. We focus on automation, continuous integration, 
+                    and delivery, with an emphasis on collaboration and communication.</p>
+                    <!--Our team is dedicated to reducing complexities in the software development 
+                    process, ensuring that your applications are not only developed rapidly but also remain robust 
+                    and scalable. With our DevOps services, we are committed to enhancing the agility of your business, 
+                    ensuring that you stay ahead in the fast-paced digital world.-->
+
+                    <h4>LiveOps</h4>
+                    <p>We provide dynamic and continuous support for our clients websites and applications. 
+                    Our focus is on keeping your digital platforms engaging and fresh, ensuring a seamless 
+                    and evolving experience for your users. Our team of experts is dedicated to managing 
+                    live content, implementing updates, and overseeing community interactions. We understand 
+                    the importance of real-time responses and adaptability in maintaining the vitality of 
+                    your online presence.</p>
+                    <!-- With our LiveOps services, we're not just managing a website or an application; we're 
+                    nurturing a living, thriving digital ecosystem that keeps users engaged and returning for more.-->
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href>Quality Assurance</a>
+                <div class="uk-accordion-content uk-margin-large-bottom">
+                    <p>Quality Assurance is at the forefront of our services. We are dedicated to ensuring that every 
+                    product we handle meets the highest standards of quality and reliability. Our team of experienced 
+                    QA professionals employs a comprehensive approach, utilizing the latest testing methodologies and 
+                    tools to meticulously assess every aspect of a product. From functional and performance testing to 
+                    security and usability checks, we cover all bases to identify and rectify any issues.</p>
+                    <!--Our goal is 
+                    to safeguard the integrity of your product, ensuring it performs flawlessly under all conditions 
+                    and delivers a superior user experience. We believe in proactive communication and collaboration 
+                    with our clients, providing detailed reports and insights to keep them informed at every step. 
+                    With our Quality Assurance services, you can be confident that your product stands out in the 
+                    market for its excellence and reliability.-->
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href>Integrations</a>
+                <div class="uk-accordion-content uk-margin-large-bottom">
+                    <p>We specialize in seamless Integrations, connecting your project with a wide array of powerful third-party 
+                    services. Whether you need payment processing, VoIP, geolocation, multimedia, or CMS platforms, our team has 
+                    the expertise to integrate these tools efficiently into your system. We understand the importance of enhancing 
+                    your project with these advanced functionalities, which is why we focus on creating smooth, reliable integrations 
+                    that enrich user experience and elevate your project's capabilities.</p>
+                    <!--Our approach is tailored to ensure that these 
+                    integrations work in harmony with your existing setup, optimizing performance and functionality. With our extensive 
+                    experience in integrating diverse third-party services, we are committed to empowering your project with the tools 
+                    it needs to succeed in today's competitive landscape.-->
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href>Consulting</a>
+                <div class="uk-accordion-content uk-margin-large-bottom">
+                    <h4>Product Management</h4>
+                    <p>We offer a comprehensive approach to overseeing the lifecycle of your products. Our team of experienced 
+                    product managers works diligently to bridge the gap between your business strategy and the customer 
+                    experience. We focus on understanding market trends, customer needs, and technological advancements to 
+                    ensure your product not only meets current demands but also anticipates future trends. From ideation to 
+                    launch and beyond, we manage every aspect including planning, development, launch, and continuous 
+                    improvement.</p>
+                    <!--We prioritize clear communication, aligning cross-functional teams towards common goals to 
+                    create products that not only fulfill market needs but also drive business growth. With our expertise in 
+                    Product Management, we are committed to delivering successful products that resonate with your target 
+                    audience and strengthen your market position.-->
+
+                    <h4>Project Management</h4>
+                    <p>We ensure that your projects are delivered on time, within budget, and to the highest quality standards. 
+                    Our team of seasoned project managers employs a strategic approach, meticulously planning and overseeing 
+                    every aspect of your project from inception to completion. We focus on clear communication, risk management, 
+                    and resource allocation to navigate complexities and coordinate efforts seamlessly. Our expertise spans 
+                    various methodologies, enabling us to tailor our approach to best suit your project’s needs.</p>
+                    <!-- We understand that every project is unique, and we are dedicated to providing personalized solutions 
+                    that align with your objectives. With our Project Management services, you can trust us to guide your projects 
+                    to success, allowing you to focus on your core business activities.-->
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title" href>Branding</a>
+                <div class="uk-accordion-content uk-margin-large-bottom">
+                    <p>We are passionate about Brand Design, offering a tailored approach to creating distinctive and memorable 
+                    brand identities that resonate with your audience. Our team of creative professionals excels in translating 
+                    your vision and values into a powerful visual language. We focus on crafting a cohesive brand experience 
+                    that stands out in the market, from logo design to the overall visual strategy. Our process involves deep 
+                    market research, understanding your unique position, and then meticulously designing every element to reflect 
+                    your brand's personality and ethos. </p>
+                    <!--We believe that a strong brand design is not just about aesthetics, but 
+                    about creating an emotional connection with your audience, setting the tone for your entire customer journey. 
+                    With our expertise in Brand Design, we are committed to elevating your brand, making it not only recognizable 
+                    but unforgettable.-->
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+

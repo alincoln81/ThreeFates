@@ -3,9 +3,19 @@
 <html>
   <head>
     <title>Three Fates Digital</title>
-    <!--
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    -->
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+            $("#includeHeader").load("header.html");
+            $("#includeAbout").load("about.html");
+            $("#includeServices").load("./services/services.html");
+            $("#includePortfolio").load("portfolio.html");
+            $("#includeSkills").load("skills.html");
+            $("#includeContact").load("contact.html");
+        });
+    </script>
+
     <link rel="icon" href="./assets/images/TFD_favicon.png" type="image/png">
 
     <meta charset="utf-8">
@@ -15,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/9aab0c4940.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./assets/uikit/css/uikit.min.css" />
     <script src="./assets/uikit/js/uikit.min.js"></script>
     <script src="./assets/uikit/js/uikit-icons.min.js"></script>
@@ -22,20 +34,153 @@
     <link href="./assets/styles/styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/uikit_overrides.css" type="text/css">
 
-    <script src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/script.js" defer></script>
   </head>
 
   <body>
 
-    <main>
-        <div id="splash" class="uk-container uk-container-small uk-padding uk-text-center">
-          <img src="./assets/images/TFD_logo.png" alt="Three Fates Digital">
-          <h1 class="uk-margin-large uk-margin-rmove-bottom">Comming Soon!</h1>
-          <h3><a href="mailto:info@threefatesdigital.com">info@threefatesdigital.com</a></h3>
-        </div>
-        
+    <header>
+        <div id="includeHeader"></div>
+    </header>
 
+    <main>
+        <a id="hero"></a>
+        <section class="hero">
+            <div id="includeHero"></div>
+        </section>
+
+        <a id="about"></a>
+        <section class="about">
+            <div id="includeAbout"></div>
+        </section>
+
+        <a id="services"></a>
+        <section class="services">
+            <div id="includeServices"></div>
+        </section>
+
+        <a id="process"></a>
+        <section class="process">
+          <div class="uk-container uk-container-large uk-padding-small uk-margin-large-top">
+
+            <h2 class="">Our Process</h2>
+            <p>At Three Fates Digital, our process is meticulously designed to ensure the best results for our clients. 
+              Here's a brief overview of each step in our process:</p>
+
+            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid uk-height-match="target: > div > .uk-card">
+              
+              <!--DISCOVERY ================================================================================-->
+              <div> <!--card-wrapper-start-->
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="./assets/images/discover.jpg">
+                  </div> <!--card-media-end-->
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Discovery</h3>
+                    <p>This initial phase is all about understanding your vision, goals, and requirements. We engage in 
+                      in-depth discussions to gather insights about your business, target audience, and desired functionalities. 
+                      This helps us create a tailored strategy that aligns with your objectives.</p>
+                  </div> <!--card-body-end-->
+                </div> <!--uk-card-end-->
+              </div> <!--card-wrapper-end-->
+
+              <!--PROPOSAL ===================================================================================-->
+              <div> <!--card-wrapper-start-->
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="./assets/images/proposal.jpg">
+                  </div> <!--card-media-end-->
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Proposal</h3>
+                    <p>Based on the information gathered during the discovery phase, we draft a comprehensive proposal. 
+                      This document outlines the project scope, timeline, estimated budget, and a roadmap of how we plan 
+                      to achieve your goals. It serves as a clear guide and agreement for both parties moving forward.</p>
+                  </div> <!--card-body-end-->
+                </div> <!--uk-card-end-->
+              </div> <!--card-wrapper-end-->
+
+              <!--DESIGN ===================================================================================-->
+              <div> <!--card-wrapper-start-->
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="./assets/images/design.jpg">
+                  </div> <!--card-media-end-->
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Design</h3>
+                    <p>Here, our creative team gets to work on the design. We focus on creating a user-friendly 
+                      interface and an appealing aesthetic that reflects your brand identity. We ensure that the 
+                      design is not only visually striking but also functional and easy to navigate.</p>
+                  </div> <!--card-body-end-->
+                </div> <!--uk-card-end-->
+              </div> <!--card-wrapper-end-->
+
+              <!--DEVELOP ==================================================================================-->
+              <div> <!--card-wrapper-start-->
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="./assets/images/develop.jpg">
+                  </div> <!--card-media-end-->
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Develop</h3>
+                    <p>Once the design is approved, our developers start building your website/application. 
+                      This stage involves coding, creating content management systems, and integrating necessary 
+                      functionalities. We prioritize clean, efficient code and responsive design to ensure the 
+                      site/application works seamlessly across different devices and platforms.</p>
+                  </div> <!--card-body-end-->
+                </div> <!--uk-card-end-->
+              </div> <!--card-wrapper-end-->
+
+              <!--LAUNCH ===================================================================================-->
+              <div> <!--card-wrapper-start-->
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="./assets/images/launch.jpg">
+                  </div> <!--card-media-end-->
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Launch</h3>
+                    <p>After thorough testing and final approvals, we launch the website/application. This phase involves 
+                      setting the site/application live, monitoring its performance, and making any necessary adjustments.
+                       We ensure a smooth transition, paying attention to aspects like SEO, load time, and user experience.</p>
+                  </div> <!--card-body-end-->
+                </div> <!--uk-card-end-->
+              </div> <!--card-wrapper-end-->
+
+              <!--SUPPORT ==================================================================================-->
+              <div> <!--card-wrapper-start-->
+                <div class="uk-card uk-card-default">
+                  <div class="uk-card-media-top">
+                    <img src="./assets/images/support.jpg">
+                  </div> <!--card-media-end-->
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">Support</h3>
+                    <p>Our relationship with our clients doesn’t end at launch. We provide ongoing support to handle any 
+                      issues, updates, or further developments your site/application may require. Regular maintenance 
+                      is performed to ensure the website/application remains secure, efficient, and up-to-date with the 
+                      latest web standards.</p>
+                  </div> <!--card-body-end-->
+                </div> <!--uk-card-end-->
+              </div> <!--card-wrapper-end-->
+
+            </div> <!--grid-end-(card-parent)-->
+
+          </div> <!--container-end-->
+        </section>
+
+        <a id="portfolio"></a>
+        <section class="portfolio">
+            <div id="includePortfolio"></div>
+        </section>
+
+        <a id="skills"></a>
+        <section class="skills">
+            <div id="includeSkills"></div>
+        </section>
     </main>
+
+    <a id="contact"></a>
+    <footer>
+        <div id="includeContact"></div>
+    </footer>
 
   </body>
 

@@ -1,5 +1,5 @@
 .uk-navbar-transparent {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color:rgba(0, 0, 0, 0.8) !important;
 }
 
 .uk-navbar-nav>li>a {
@@ -8,7 +8,7 @@
     transition: color 0.3s ease-in-out;
 }
 .uk-navbar-nav>li.uk-active>a, .uk-navbar-nav>li>a:hover {
-    color:#1e87f0;
+    color:#52a7c1;
 }
 .uk-dropdown {
     background-color: rgba(0, 0, 0, 0.8) !important;
@@ -19,5 +19,41 @@
     transition: color 0.3s ease-in-out;
 }
 .uk-dropdown-nav>li.uk-active>a, .uk-dropdown-nav>li>a:hover {
-    color:#1e87f0;
+    color:#52a7c1;
+}
+.uk-tab>.uk-active>a, .uk-tab>*>a:hover, .uk-accordion-title {
+    color:#52a7c1;
+    border-color: #52a7c1;
+    transition: all 0.3s ease-in-out;
+}
+.uk-tab>*>a {
+    color: #FFFFFF;
+}
+.process .uk-card-default {
+    background-color: #52a7c1;
+}
+.process .uk-card-default .uk-card-title, .process .uk-card-default p, .uk-accordion-title:hover {
+    color: #FFFFFF;
+}
+
+.process .uk-card-default:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 1);
+}
+.uk-button-primary {
+    background-color: #52a7c1;
+}
+.uk-button-primary:hover {
+    background-color: #52a7c1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+.uk-accordion-title::before {
+    background-image: none !important;
+    content: '+';
+}
+.uk-open>.uk-accordion-title::before {
+    content: '-';
+}
+.uk-accordion-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #52a7c1;
 }
