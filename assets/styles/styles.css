@@ -213,7 +213,7 @@ footer a:hover {
         font-size: 0.8rem;
     }
 }
-@media (hover: none) {
+@media (any-pointer: coarse) {
     #toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
         position: relative;
         left: 50px !important;
