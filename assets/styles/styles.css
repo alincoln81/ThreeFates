@@ -215,6 +215,8 @@ footer a:hover {
 }
 @media (hover: none) {
     #toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
-        margin-left: 50px !important;
+        position: relative;
+        left: 50px !important;
+        max-width: calc(100% - 50px);
     }
 }
