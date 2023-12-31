@@ -112,11 +112,6 @@ header #logo img {
 .active span {
     color: #FFFFFF !important;
 }
-
-#toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
-    padding-left: 20px !important;
-}
-
 /* Services */
 .services p {
     margin-top: 5px;
@@ -216,5 +211,10 @@ footer a:hover {
 @media screen and (max-height:700px) {
     .ndegreev {
         font-size: 0.8rem;
+    }
+}
+@media (hover: none) {
+    #toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
+        /*padding-left: 20px !important;*/
     }
 }
