@@ -45,9 +45,6 @@ header {
     transition: all 0.3s ease-in-out;
     background-color: rgba(4, 11, 21, 0.9);
 }
-header .uk-navbar-container {
-    padding: 0px 25px;
-}
 header.nav-up {
     top: -110px;
 }
@@ -70,6 +67,7 @@ header #logo img {
 
 #eye-svg {
     position: fixed;
+    top: 0px;
     width: 100%;
     height: 100vh;
     z-index: -5;
@@ -85,13 +83,9 @@ header #logo img {
 /* Hero */
 #hero_scroll {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 110px);
     z-index: 1;
     position: relative;
-    top: -110px;
-}
-#hero-container {
-    padding: 0px 25px;
 }
 #hero_scroll h2 {
     text-shadow: 2px 3px 3px #222;
@@ -117,6 +111,10 @@ header #logo img {
 }
 .active span {
     color: #FFFFFF !important;
+}
+
+#toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
+    padding-left: 20px !important;
 }
 
 /* Services */
@@ -172,13 +170,10 @@ header #logo img {
 
 .skillsDiv {
     height: 120px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 .skillsDiv .uk-tooltip.uk-active {
     color: #24a8c4 !important;
-    background-color: transparent;
+    background-color: rgba(4, 11, 21, 0.9);
 }
 .skillsDiv .uk-tooltip-inner {
     font-size: 1rem !important;
@@ -216,5 +211,10 @@ footer a:hover {
     }
     #splash a {
         font-size: 1rem;
+    }
+}
+@media screen and (max-height:700px) {
+    .ndegreev {
+        font-size: 0.8rem;
     }
 }
