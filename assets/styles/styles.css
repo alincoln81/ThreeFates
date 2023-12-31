@@ -215,6 +215,6 @@ footer a:hover {
 }
 @media (hover: none) {
     #toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
-        /*padding-left: 20px !important;*/
+        margin-left: 50px !important;
     }
 }
