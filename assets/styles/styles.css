@@ -8,53 +8,117 @@ html {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8em;
     font-size: 18px;
-    background-color: #222;
+    background-color: #040b15;
 }
 body {
     padding: 0;
     height: 100vh;
     width: 100%;
     color:rgb(255, 255, 255);
-    background-color: #222;
+    background-color: #040b15;
+    position: relative;
+    z-index: -20;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #52a7c1;
+    color: #24a8c4;
 }
-#about, #services, #skills, #contact {
+#about {
     position: relative;
-    top: -130px;
+    top: -80px;
+}
+strong {
+    font-family: 'Eagle Lake', serif;
+    color: #24a8c4;
+}
+section {
+    position: relative;
+    z-index: 2;
 }
 /* Header ------------------------------------------------------------------------------- */
 header {
     width: 100%;
-    position: fixed;
+    /*position: fixed;
+    top: 0px;
+    */
+    position: relative;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(4, 11, 21, 0.9);
 }
-header #logo {
-    height: 100px;
+header .uk-navbar-container {
+    padding: 0px 25px;
+}
+header.nav-up {
+    top: -110px;
+}
+header.nav-down {
+    top: 0px
+}
+header #logo img {
+    height: 80px;
     width: auto;
+}
+#hamburger {
+    font-size: 2rem;
 }
 
 /* Main --------------------------------------------------------------------------------- */
-main {
-    /*padding-top: 100px;*/
+#about {
+    position: relative;
+    top: 0px;
 }
 
-/* Hero */
-#includeHero {
-    background-image: url('/assets/images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#eye-svg {
+    position: fixed;
     width: 100%;
     height: 100vh;
+    z-index: -5;
+    display: flex;
+    justify-content: center;
+}
+#eye-svg svg {
+    height: 100%;
+}
+#outer-eye path, #inner-eye path {
+    transition: all 0.3s ease-in-out;
+}
+/* Hero */
+#hero_scroll {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    top: -110px;
+}
+#hero-container {
+    padding: 0px 25px;
+}
+#hero_scroll h2 {
+    text-shadow: 2px 3px 3px #222;
 }
 
-
-/* About */
-.about #company-title {
+.ndegreev {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Eagle Lake', serif;
     font-size: 1rem;
 }
+.ndegreevinvert {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Eagle Lake', serif;
+    font-size: 1rem;
+}
+.sectionButtons span, .sectionButtons span {
+    transition: all 0.3s ease-in-out;
+}
+.active span {
+    color: #FFFFFF !important;
+}
+
 /* Services */
 .services p {
     margin-top: 5px;
@@ -80,20 +144,19 @@ main {
     background-image: url('/assets/images/svg/Consult.png');
 }
 #devops {
-    background-image: url('/assets/images/svg/Design.png');
+    background-image: url('/assets/images/svg/Ops.png');
 }
 #qa {
-    background-image: url('/assets/images/svg/Design.png');
+    background-image: url('/assets/images/svg/qa.png');
 }
 #support {
-    background-image: url('/assets/images/svg/Design.png');
+    background-image: url('/assets/images/svg/Support.png');
 }
 #webdev, #appdev, #devops, #liveops, #qa, #integrate, #prodconsult, #projconsult, #branding, #support {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-bottom: 50px;
 }
 
 .services .learn {
@@ -101,20 +164,41 @@ main {
     bottom: 0px;
 }
 
+/* Process */
+#toggle-animation-process strong {
+    color: rgba(255,255,255,0.9);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skillsDiv {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.skillsDiv .uk-tooltip.uk-active {
+    color: #24a8c4 !important;
+    background-color: transparent;
+}
+.skillsDiv .uk-tooltip-inner {
+    font-size: 1rem !important;
+}
 /* Skills */
 i.skill {
     padding: 10px;
-    font-size: 2.8rem;
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.7);
     transition: all 0.3s ease-in-out;
 }
 
 i.skill:hover {
-    color: #52a7c1;
+    color: #24a8c4;
+    font-size: 3rem;
 }
 
 /* Footer ------------------------------------------------------------------------------- */
 footer a {
-    color: #52a7c1;
+    color: #24a8c4;
     font-size: 1.5rem;
     text-decoration: none;
     cursor: pointer;

@@ -1,49 +1,141 @@
+<script src="./assets/scripts/script.js" defer></script>
+
 <div class="uk-container uk-container-large uk-padding-small uk-margin-large-top">
 
-    <div class="uk-grid-small" uk-grid>
+    <ul class="uk-list">
 
-        <div class="uk-width-1-1">
-            <h2 class="uk-margin-remove-bottom">About Us</h2>
-
-            <p>Three Fates Digital comprises a team of innovative experts committed to crafting compelling websites, brands, 
-            and applications that evolve with your business. Established in 2023, our agency traces its origins to 2007. 
-            It all began when our founder first collaborated with clients in need of web design and digital marketing solutions. 
-            Since those early days, our company has experienced consistent growth, catering to a diverse clientele that ranges 
-            from dynamic startups to major public corporations, both locally and internationally.</p>
-
-            <p>At the core of our philosophy is the belief that our clients need more than just a website; they need a robust 
-            online presence. This philosophy has given rise to a distinctive fusion of creative flair and systematic 
-            service, ensuring the delivery of high-quality projects both on time and within budget. Our team, comprised of skilled 
-            designers, developers, and managers, is committed to more than just delivering satisfactory results. We aim for 
-            excellence in all our endeavors, striving to set new standards of quality in every website and application we develop.</p>
+        <!-- VISION -->
+        <li class="uk-grrid-small uk-container uk-container-small" uk-grid>
+            <div class="uk-width-auto" id="vision-button">
+                <button class="uk-button uk-button-link" type="button" uk-toggle="target: #toggle-animation-multiple; animation:  uk-animation-slide-right;">
+                    <h2 class="uk-margin-remove uk-text-uppercase ndegreev" uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">
+                        vision
+                    </h2>
+                </button>  
             </div>
-
-            <div class="uk-width-1-1">
-                <h3 class="uk-margin-remove-bottom uk-margin-top">About Our Founder</h3>
+            <div id="toggle-animation-multiple" class="uk-width-expand uk-card uk-padding-small uk-card-secondary uk-text-justify" hidden>
+                <p class="uk-margin-remove-top">
+                    Our Vision is to be a global leader in technology services, transforming the digital landscape
+                    through pioneering solutions in website and application development, operational
+                    excellence, and quality assurance. We aspire to set new standards in the tech
+                    industry, fostering a future where technology enhances human potential and
+                    businesses thrive through digital innovation.
+                </p>
             </div>
+        </li>
 
-            <div class="uk-width-1-4@l">
+        <!-- VALUES -->
+        <li class="uk-grrid-small uk-container uk-container-small" uk-grid>
+            <div class="uk-width-auto">
+                <button class="uk-button uk-button-link" type="button" uk-toggle="target: #toggle-animation-values; animation:  uk-animation-slide-right;">
+                    <h2 class="uk-margin-remove uk-text-uppercase ndegreev" uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">
+                        Values
+                    </h2>
+                </button>  
+            </div>
+            <div id="toggle-animation-values" class="uk-width-expand uk-card uk-padding-small uk-card-secondary uk-text-justify" hidden>
+                <h4 class="uk-margin-remove-top">
+                    Do you believe in <strong>Fate</strong>? Because we do!
+                </h4>
+
+                <p>
+                    At the heart of our company's ethos, the <strong>FATE</strong> values – Family, Adaptability, Transparency, 
+                    and Excellence – guide every aspect of our journey towards innovation and success.
+                </p>
+
+                <ul>
+                    <li><strong>Family:</strong> Emphasizing a team-oriented culture where everyone is treated with respect and empathy.</li>
+                    <li><strong>Adaptability:</strong> Adapting swiftly to evolving technology trends and client needs.</li>
+                    <li><strong>Transparency:</strong> Demonstrating a commitment to clear, honest practices.</li>
+                    <li><strong>Excellence:</strong> Upholding the highest standards in all our services and solutions.</li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- 
+            - **Family**:
+            - Emphasizing a team-oriented culture where everyone is treated with respect and empathy.
+            - Encouraging work-life balance and supporting the personal needs of each team member.
+            - Fostering a sense of belonging and unity, where each member's contribution is valued and celebrated.
+
+            - **Adaptability**:
+            - Embracing change and being agile in responding to evolving market trends and client needs.
+            - Encouraging innovative thinking and flexibility in approaches to problem-solving.
+            - Promoting a learning environment where employees are motivated to develop new skills and adapt to new challenges.
+
+            - **Transparency**:
+            - Committing to open and honest communication within the team and with clients.
+            - Ensuring clear and straightforward processes and decision-making.
+            - Building trust by being accountable and transparent in all business practices.
+
+            - **Excellence**:
+            - Striving for the highest quality in every aspect of work, from product development to customer service.
+            - Encouraging continuous improvement and setting high performance standards.
+            - Recognizing and rewarding exceptional effort and achievements.
+        -->
+
+        <!-- MARKET -->
+        <li class="uk-grrid-small uk-container uk-container-small" uk-grid>
+            <div class="uk-width-auto">
+                <button class="uk-button uk-button-link" type="button" uk-toggle="target: #toggle-animation-market; animation:  uk-animation-slide-right;">
+                    <h2 class="uk-margin-remove uk-text-uppercase ndegreev" uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">
+                        Market
+                    </h2>
+                </button>  
+            </div>
+            <div id="toggle-animation-market" class="uk-width-expand uk-card uk-padding-small uk-card-secondary uk-text-justify" hidden>
+                <p class="uk-margin-remove-top">
+                    We are dedicated to delivering innovative and tailor-made solutions that drive growth, efficiency, and 
+                    sustainability. Our arget market encompasses a diverse range of industries seeking digital transformation 
+                    and innovation. We primarily cater to:
+                </p>
+                
+                <ul>
+                    <li>Small to Medium Enterprises looking for scalable and custom web solutions.</li>
+                    <li>Startups needing agile development and rapid deployment capabilities.</li>
+                    <li>Large corporations seeking robust LiveOps and DevOps support.</li>
+                    <li>Industries focused on digitalizing their operations, such as healthcare, education, and entertainment.</li>
+                    <li>Organizations requiring stringent quality assurance to maintain high standards in their tech deployments.</li>
+                </ul>
+            </div>
+        </li>
+
+
+        <!-- ORIGIN -->
+        <li class="uk-margin-large-top uk-padding-large uk-padding-remove-horizontal">
+            <p uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">
+                Founded in 2007, our journey began with a small team of passionate technologists and entrepreneurs. Recognizing 
+                a gap in the market for high-quality, customer-focused technology services, we embarked on a mission to offer 
+                bespoke solutions in web and app development. Over the years, our expertise expanded into LiveOps, DevOps, quality 
+                assurance, and comprehensive project and product management, marking our evolution into a full-fledged technology 
+                service provider. Our growth is a testament to our commitment to innovation, quality, and client satisfaction.</p>
+        </li>
+        
+        <li uk-grid>
+            <div class="uk-width-1-4@l" uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">
                 <img src="./assets/images/profilepic.png">
             </div>
 
             <div class="uk-width-3-4@l">
-                <h3 class="uk-margin-remove-vertical">Amber Lincoln, <span id="company-title">Founder & CEO</span></h3>
-                <h4 class="uk-margin-remove-top">Seasoned Professional | Transforming Visions into Reality</h4>
+                <h3 uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;" class="uk-margin-remove-vertical">Amber Lincoln, <span id="company-title">Founder & CEO</span></h3>
+                <h4 uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;" class="uk-margin-remove-top">Seasoned Professional | Transforming Visions into Reality</h4>
 
-                <p>Over the past 16 years, she has embarked on an extraordinary journey, leading vibrant teams across various sectors 
+                <p uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">Over the past 16 years, she has embarked on an extraordinary journey, leading vibrant teams across various sectors 
                 such as entertainment, telehealth, mining, software, gaming, and web development. Her true calling lies in transforming 
                 groundbreaking ideas into real-world achievements.</p>
 
-                <p>She sees challenges as avenues for growth. With an innate ability to solve problems, she excels in identifying and 
+                <p uk-scrollspy="cls:uk-animation-fade; repeat:false; delay: 300;">She sees challenges as avenues for growth. With an innate ability to solve problems, she excels in identifying and 
                 addressing risks. Her leadership spans the entire project lifecycle, from initiation to completion, showcasing extensive 
                 expertise in Research and Development (R&D), initiating new projects, managing live productions, planning releases, and 
                 handling DevOps.</p>
-                <!--
-                <p>Her skill in navigating different environments is a key aspect of her professional approach, enabling effective 
-                collaboration with clients, stakeholders, and team members at all organizational levels. This flexibility has been 
-                a cornerstone of her continuous success.</p>
-                -->
             </div>
-        </div>
-    </div>
+        </li>
+
+        <!-- OTHER -->
+        <li>Endosements / Reviews</li>
+        <li>Contact Info</li>
+        <li>Social Media</li>
+        <li>Your Trust Badges</li>
+    </ul>
+
 </div>
