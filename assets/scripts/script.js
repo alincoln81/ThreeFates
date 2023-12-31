@@ -159,7 +159,7 @@ let midIrisPaths = midIris.getElementsByTagName('path');
 let innerIris = document.getElementById('inner-iris');
 let innerIrisPaths = innerIris.getElementsByTagName('path');
 
-let topSection = document.getElementById('aboutDiv');
+let topSection = document.getElementById('about');
 
 function clickedAbout(clicked) {
     //console.log('Clicked: ', clicked);
