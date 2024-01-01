@@ -48,7 +48,7 @@ function hasScrolled() {
 
 // Check if touch device
 var isTouch = (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
-console.log(isTouch);
+//console.log(isTouch);
 
 // Animate About Section Buttons on Hover
 function startAnimText(el) {

@@ -22,34 +22,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: #24a8c4;
 }
-#about {
-    position: relative;
-    top: -80px;
-}
-strong {
-    font-family: 'Eagle Lake', serif;
-    color: #24a8c4;
-}
 section {
     position: relative;
     z-index: 2;
 }
+strong {
+    color: rgba(255,255,255,0.9);
+}
+
+/* Presets ------------------------------------------------------------------------------ */
+.fate {
+    font-family: 'Eagle Lake', serif;
+    color: #24a8c4;
+}
+
 /* Header ------------------------------------------------------------------------------- */
 header {
     width: 100%;
-    /*position: fixed;
-    top: 0px;
-    */
     position: relative;
     z-index: 10;
     transition: all 0.3s ease-in-out;
     background-color: rgba(4, 11, 21, 0.9);
-}
-header.nav-up {
-    top: -110px;
-}
-header.nav-down {
-    top: 0px
 }
 header #logo img {
     height: 80px;
@@ -59,12 +52,7 @@ header #logo img {
     font-size: 2rem;
 }
 
-/* Main --------------------------------------------------------------------------------- */
-#about {
-    position: relative;
-    top: 0px;
-}
-
+/* SVG --------------------------------------------------------------------------------- */
 #eye-svg {
     position: fixed;
     top: 0px;
@@ -80,7 +68,7 @@ header #logo img {
 #outer-eye path, #inner-eye path {
     transition: all 0.3s ease-in-out;
 }
-/* Hero */
+/* Hero --------------------------------------------------------------------------------- */
 #hero_scroll {
     width: 100%;
     height: calc(100vh - 110px);
@@ -91,6 +79,7 @@ header #logo img {
     text-shadow: 2px 3px 3px #222;
 }
 
+/* Section --------------------------------------------------------------------------------- */
 .ndegreev {
     writing-mode: vertical-lr;
     text-orientation: mixed;
@@ -99,70 +88,15 @@ header #logo img {
     font-family: 'Eagle Lake', serif;
     font-size: 1rem;
 }
-.ndegreevinvert {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    transition: all 0.3s ease-in-out;
-    font-family: 'Eagle Lake', serif;
-    font-size: 1rem;
-}
+
 .sectionButtons span, .sectionButtons span {
     transition: all 0.3s ease-in-out;
 }
 .active span {
     color: #FFFFFF !important;
 }
-/* Services */
-.services p {
-    margin-top: 5px;
-}
-.services ul.uk-switcher, .services ul.uk-switcher li {
-    height: 100%;
-}
-.uk-modal-body p {
-    color: #222;
-}
 
-#switcher-cont {
-    min-height: 340px;
-}
-
-#webdev, #appdev {
-    background-image: url('/assets/images/svg/Develop_0000_Layer-1.png');
-}
-#branding {
-    background-image: url('/assets/images/svg/Design.png');
-}
-#prodconsult {
-    background-image: url('/assets/images/svg/Consult.png');
-}
-#devops {
-    background-image: url('/assets/images/svg/Ops.png');
-}
-#qa {
-    background-image: url('/assets/images/svg/qa.png');
-}
-#support {
-    background-image: url('/assets/images/svg/Support.png');
-}
-#webdev, #appdev, #devops, #liveops, #qa, #integrate, #prodconsult, #projconsult, #branding, #support {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.services .learn {
-    position: absolute;
-    bottom: 0px;
-}
-
-/* Process */
-#toggle-animation-process strong {
-    color: rgba(255,255,255,0.9);
-    font-family: 'Open Sans', sans-serif;
-}
-
+/* Skills --------------------------------------------------------------------------------- */
 .skillsDiv {
     height: 120px;
 }
@@ -173,14 +107,12 @@ header #logo img {
 .skillsDiv .uk-tooltip-inner {
     font-size: 1rem !important;
 }
-/* Skills */
 i.skill {
     padding: 10px;
     font-size: 1.5rem;
     color: rgba(255,255,255,0.7);
     transition: all 0.3s ease-in-out;
 }
-
 i.skill:hover {
     color: #24a8c4;
     font-size: 3rem;
@@ -213,12 +145,3 @@ footer a:hover {
         font-size: 0.8rem;
     }
 }
-/*
-@media (any-pointer: coarse) {
-    #toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
-        position: relative;
-        left: 20px !important;
-        max-width: calc(100% - 40px);
-    }
-}
-*/
