@@ -138,10 +138,15 @@ let sectionDivs = [
     document.getElementById('processDiv'),
     document.getElementById('portfolioDiv')
 ];
-for(var m = 0; m < sectionDivs.length; m++) {
-    sectionDivs[m].addEventListener('mouseenter', startAnimText);
-    sectionDivs[m].addEventListener('mouseleave', stopAnimText);
+
+
+if(!isTouch) {
+    for(var m = 0; m < sectionDivs.length; m++) {
+        sectionDivs[m].addEventListener('mouseenter', startAnimText);
+        sectionDivs[m].addEventListener('mouseleave', stopAnimText);
+    }
 }
+
 
 let lastClicked = '';
 let fillColor = '#24a8c4';
@@ -170,38 +175,38 @@ function clickedAbout(clicked) {
     //console.log('Last Clicked: ', lastClicked);
     
 
-   
+    if(!isTouch) {
+        //Color Left & Right Eyes White or Blue based on Current Color
+        if(fillColor === '#FFFFFF') {
+            fillColor = '#24a8c4';
+        } else {
+            fillColor = '#FFFFFF';
+        }
+        for(var i = 0; i < leftSideEyePath.length; i++) {
+            doSetTimeoutEyeFill(leftSideEyePath[i], (i+50) * 2.5, fillColor);
+        }
+        for(var j = 0; j < rightSideEyePath.length; j++) {
+            doSetTimeoutEyeFill(rightSideEyePath[j], (j+50) * 2.5, fillColor);
+        }
 
-    //Color Left & Right Eyes White or Blue based on Current Color
-    if(fillColor === '#FFFFFF') {
-        fillColor = '#24a8c4';
-    } else {
-        fillColor = '#FFFFFF';
-    }
-    for(var i = 0; i < leftSideEyePath.length; i++) {
-        doSetTimeoutEyeFill(leftSideEyePath[i], (i+50) * 2.5, fillColor);
-    }
-    for(var j = 0; j < rightSideEyePath.length; j++) {
-        doSetTimeoutEyeFill(rightSideEyePath[j], (j+50) * 2.5, fillColor);
-    }
+        //Adjust Mid Iris Opacities
+        for(var j = 0; j < midIrisPaths.length; j++) {
+            doSetTimeoutEyeOpacity(midIrisPaths[j], j * 0.3, '1');
+            doSetTimeoutEyeFill(midIrisPaths[j], j*0.3, '#24a8c4');
+            doSetTimeoutEyeOpacity(midIrisPaths[j], (j+10) * 0.8, midIrisPaths[j].style.opacity);
+            doSetTimeoutEyeFill(midIrisPaths[j], (j+10) * 0.8, midIrisPaths[j].style.fill);
+        }
+        
 
-    //Adjust Mid Iris Opacities
-    for(var j = 0; j < midIrisPaths.length; j++) {
-        doSetTimeoutEyeOpacity(midIrisPaths[j], j * 0.3, '1');
-        doSetTimeoutEyeFill(midIrisPaths[j], j*0.3, '#24a8c4');
-        doSetTimeoutEyeOpacity(midIrisPaths[j], (j+10) * 0.8, midIrisPaths[j].style.opacity);
-        doSetTimeoutEyeFill(midIrisPaths[j], (j+10) * 0.8, midIrisPaths[j].style.fill);
-    }
-    
+        //Adjust Inner Iris Opacities
+        for(var j = 0; j < innerIrisPaths.length; j++) {
+            doSetTimeoutEyeOpacity(innerIrisPaths[j], j * 0.3, '1');
+            doSetTimeoutEyeFill(innerIrisPaths[j], j * 0.3, '#FFFFFF');
+            doSetTimeoutEyeOpacity(innerIrisPaths[j], (j+10) * 0.8, innerIrisPaths[j].style.opacity);
+            doSetTimeoutEyeFill(innerIrisPaths[j], (j+10) * 0.8, innerIrisPaths[j].style.fill);
+        }
 
-    //Adjust Inner Iris Opacities
-    for(var j = 0; j < innerIrisPaths.length; j++) {
-        doSetTimeoutEyeOpacity(innerIrisPaths[j], j * 0.3, '1');
-        doSetTimeoutEyeFill(innerIrisPaths[j], j * 0.3, '#FFFFFF');
-        doSetTimeoutEyeOpacity(innerIrisPaths[j], (j+10) * 0.8, innerIrisPaths[j].style.opacity);
-        doSetTimeoutEyeFill(innerIrisPaths[j], (j+10) * 0.8, innerIrisPaths[j].style.fill);
     }
-    
 
     //----------------------------------------------------------------
     // Remove Active Class from All Buttons
