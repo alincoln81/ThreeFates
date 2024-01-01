@@ -213,6 +213,7 @@ footer a:hover {
         font-size: 0.8rem;
     }
 }
+/*
 @media (any-pointer: coarse) {
     #toggle-animation-about, #toggle-animation-services, #toggle-animation-process, #toggle-animation-portfolio {
         position: relative;
@@ -220,3 +221,4 @@ footer a:hover {
         max-width: calc(100% - 40px);
     }
 }
+*/
