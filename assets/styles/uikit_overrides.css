@@ -1,3 +1,7 @@
+.uk-card-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
 .uk-card-secondary {
     background-color: rgba(4,11,21,0.7);
 }
@@ -77,4 +81,28 @@
 }
 .uk-open>.uk-accordion-title::before {
     content: '-';
+}
+a .uk-card-secondary {
+    transition: all 0.3s ease-in-out;
+}
+a:hover .uk-card-secondary {
+    text-decoration: none !important;
+    background-color: rgba(36, 168, 196, 0.8);
+}
+.uk-button-secondary {
+    background-color: rgba(36, 168, 196, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.uk-button-secondary:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(36, 168, 196);;
+}
+#footer .uk-button-primary {
+    background-color: rgb(4,11,21);
+    color: rgb(36, 168, 196);;
+    transition: all 0.3s ease-in-out;
+}
+#footer .uk-button-primary:hover {
+    background-color: rgb(4,11,21);
+    color: rgb(36, 168, 196);;
 }

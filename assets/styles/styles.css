@@ -29,7 +29,9 @@ section {
 strong {
     color: rgba(255,255,255,0.9);
 }
-
+a:hover {
+    text-decoration: none !important;
+}
 /* Presets ------------------------------------------------------------------------------ */
 .fate {
     font-family: 'Eagle Lake', serif;
@@ -53,6 +55,17 @@ header #logo img {
 }
 
 /* SVG --------------------------------------------------------------------------------- */
+#eyeBG {
+    background-image: url('/assets/images/eye.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+}
 #eye-svg {
     position: fixed;
     top: 0px;
@@ -75,8 +88,9 @@ header #logo img {
     z-index: 1;
     position: relative;
 }
-#hero_scroll h2 {
+#hero_scroll h1 {
     text-shadow: 2px 3px 3px #222;
+    font-size: 1.7rem;
 }
 
 /* Section --------------------------------------------------------------------------------- */
@@ -95,7 +109,9 @@ header #logo img {
 .active span {
     color: #FFFFFF !important;
 }
-
+#recentBlogFeed h2 {
+    font-size: 1.5rem;
+}
 /* Skills --------------------------------------------------------------------------------- */
 .skillsDiv {
     height: 120px;
@@ -130,7 +146,17 @@ footer a:hover {
     color: #FFFFFF;
     text-decoration: none;
 }
-
+#footerCTA {
+    background-color: #24a8c4;
+    border-radius: 10px;
+}
+#footerCTA h2, #footerCTA h3 {
+    color: #FFFFFF;
+}
+#footerLinks {
+    background-color: #040b15;
+    border: 1px solid #24a8c4;
+}
 /* Media -------------------------------------------------------------------------------- */
 @media only screen and (max-width:959px) {
     h1 {
